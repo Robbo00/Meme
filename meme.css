@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 80%;
+    height: 15%;
+    background-color: rgb(45, 44, 44);
+    border: 2px;
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.match{
+    position: absolute;
+    left: 35%;
+    top: 19%;
+    background-color: rgb(45, 44, 44);
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border: 2px groove;
+    border-radius: 15px;
+}
+.answers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.answers > div{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(182, 28, 11);
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    width: 47%;
+    height: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+input{
+    background-color: none;
+    width: 50%;
+    border-radius: 10px;
+}
+.form{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 25%;
+    height: 60%;
+    border-radius: 15px;
+}
+.form > form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 44, 44);
+    border-radius: 15px;
+}
+button{
+    background-color: rgb(182, 28, 11);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 5%;
+}
