@@ -13,11 +13,29 @@
             src: url(/Impact.ttf);
         }
     </style>
+    <div class="controls">
+        <div class="buttons">
+        <button>Shuffle</button>
+        <button>Remove</button>
+        <button onclick="red()">Random</button>
+        <button onclick="move()">Add</button>
+        <button onclick="move('back')">Memes</button>
+        </div>
+        
+        <input type="text">
+    </div>
 <div class="display">
 
 <div id="game" class="game">
 <h1>Meme Game</h1>
 <div id="in" class="img"></div>
+</div>
+
+<div id="form" class="form">
+    <div id="dynamImg" class="img"></div>
+    <input id="x" onkeyup="test(id)" type="text" placeholder="Add Url">
+    <input id="quotePrev" onkeyup="preview(id)" type="text" placeholder="Quote">
+    <button onclick="upload()">Submit</button>
 </div>
 
 </div>
