@@ -125,17 +125,4 @@ function search(id){
         }
         if(results.length == 5 || i == quotes.length - 1){
             console.log(results)
-            for (let z = 0; z < results.length; z++) {
-                let temp = document.createElement('p')
-                temp.innerHTML = results[z]
-                box.appendChild(temp)
-            }
-            return
-        }
-    }
-}
-
-function plaque(){
-    console.log('red')
-    box.innerHTML = ''
-}
+            for (let z = 0
