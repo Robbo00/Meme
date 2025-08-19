@@ -14,30 +14,40 @@
         }
     </style>
     <div class="controls">
-        <div class="buttons">
         <button>Shuffle</button>
-        <button>Remove</button>
-        <button onclick="red()">Random</button>
-        <button onclick="move()">Add</button>
-        <button onclick="move('back')">Memes</button>
+        <button onclick="random()">Random</button>
+        <button onclick="move('up')">Add</button>
+        <button onclick="move('down')">Memes</button>
+        <button onclick="move('right')">Search</button>
         </div>
         
-        <input type="text">
+        
     </div>
 <div class="display">
 
 <div id="game" class="game">
 <h1>Meme Game</h1>
+<div class="delete">
+<button onclick="remove('meme')">Delete Meme</button>
+<button onclick="remove('quote')">Delete Quote</button>    
+</div>
+
 <div id="in" class="img"></div>
 </div>
 
 <div id="form" class="form">
     <div id="dynamImg" class="img"></div>
     <input id="x" onkeyup="test(id)" type="text" placeholder="Add Url">
-    <input id="quotePrev" onkeyup="preview(id)" type="text" placeholder="Quote">
+    <input onblur="plaque()" id="quotePrev" onkeyup="preview(id)" type="text" placeholder="Quote">
     <button onclick="upload()">Submit</button>
 </div>
+<div id="sear" class="search">
+    <div style="background-image: url(https://i.imgflip.com/4/30r1af.jpg);" id="searchImg" class="img"></div>
+<input id="idm" type="text" onkeyup="search(id)">
+<div id="res" class="results">
 
+</div>
+</div>
 </div>
 
 </div>
